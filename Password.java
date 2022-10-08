@@ -122,6 +122,7 @@ public class Password extends Application {
 
 				// TODO Auto-generated method stub
 				if (checkPass(passField.getText().trim())) {
+					passInstr.setText(passInstrDefault);
 					pass = passField.getText().trim();
 					siteToPass.put(site, pass);
 					siteButton.setVisible(true);
